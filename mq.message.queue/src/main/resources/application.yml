@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ibm.mq
+
+ibm:
+  mq:
+    host: ${IBM_MQ_HOST}
+    port: ${IBM_MQ_PORT}
+    queue-manager: ${IBM_MQ_QUEUE_MANAGER}
+    channel: ${IBM_MQ_CHANNEL}
+    user: ${IBM_MQ_USER}
+    password: ${IBM_MQ_PASSWORD}
+
+queue:
+  ibm:
+    mq:
+      queue-consumer: ${IBM_MQ_QUEUE_CONSUMER}
+      queue-producer: ${IBM_MQ_QUEUE_PRODUCER}
